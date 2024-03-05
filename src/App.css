@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 40%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 30px 0px 50px;
+}
+
+.todo-list .nav-tabs {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.todo-list .nav-link {
+  color: black;
+  font-weight: bold;
+}
+
+.todo-list .nav-tabs {
+  --bs-nav-tabs-link-active-border-color: white white blue white
+}
+
+.todo-list .nav-link.active {
+  border-bottom-width: 3px;
+}
+
+.add-section {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-section input {
+  width: 80%;
+  padding: 10px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  outline: none;
+}
+
+.add-section input:focus {
+  border: 1px solid black;
+}
+
+.add-section .add-todo {
+  width: 15%;
+  background-color: blue;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.task-content {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-content .task-left{
+  display: flex;
+  align-items: center;
+}
+.task-content p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+.task-content input{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.task-content .task-right{
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.active-task {
+  text-decoration: line-through;
+}
